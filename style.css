@@ -1,12 +1,22 @@
 /*
- * Lawi Haven Stay – Eco‑luxury website styles
+ * Core styles for the Lawi Haven Stay website.
  *
- * This stylesheet defines a minimal and elegant layout inspired by
- * the natural surroundings of Siargao Island. Colors are chosen from
- * a palette of sand beige, deep green, warm clay and ocean blue.
+ * The palette draws from earthy tones inspired by raffia, ocean and
+ * tropical foliage.  Typography balances an elegant serif for headings
+ * with a clean sans‑serif for body copy.  Layouts employ generous
+ * whitespace and soft shadows to convey calm and understated luxury.
  */
 
-/* CSS reset */
+:root {
+  --beige: #E8E1D4;
+  --deep-green: #2F4F4F;
+  --clay: #C4A484;
+  --ocean-blue: #5B8A8A;
+  --white: #FFFFFF;
+  --charcoal: #333333;
+}
+
+/* Reset some defaults and establish box sizing */
 * {
   margin: 0;
   padding: 0;
@@ -14,202 +24,313 @@
 }
 
 body {
-  font-family: 'Montserrat', Arial, sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
   line-height: 1.6;
-  color: #333;
-  background-color: #e8e1d4; /* sand beige */
-}
-
-/* Global containers */
-.section {
-  padding: 4rem 1.5rem;
-  max-width: 1000px;
-  margin: 0 auto;
-}
-
-.section.alt {
-  background-color: #fff;
+  color: var(--charcoal);
+  background-color: var(--white);
+  overflow-x: hidden;
 }
 
 h1, h2, h3 {
-  font-family: 'Playfair Display', Georgia, serif;
-  color: #2f4f4f; /* deep green */
+  font-family: 'Playfair Display', serif;
+  color: var(--deep-green);
+  margin-bottom: 0.5em;
+  line-height: 1.3;
+}
+
+p {
   margin-bottom: 1rem;
 }
 
-h1 {
-  font-size: 2.5rem;
+/* Container utility to centralise content */
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
 }
 
-h2 {
-  font-size: 2rem;
+/* Navigation bar */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(232, 225, 212, 0.95);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+  z-index: 1000;
 }
 
-h3 {
-  font-size: 1.25rem;
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
 }
 
-p, li, label, input, textarea {
-  font-size: 1rem;
-  color: #333;
+.logo {
+  height: 50px;
+  width: auto;
 }
 
-a {
-  color: #5b8a8a; /* ocean blue */
+.primary-nav a {
+  margin-left: 2rem;
+  color: var(--deep-green);
   text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
 }
 
-a:hover {
-  text-decoration: underline;
+.primary-nav a:hover {
+  color: var(--ocean-blue);
+}
+
+.book-btn {
+  background-color: var(--deep-green);
+  color: var(--white);
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  margin-left: 2rem;
+  transition: background-color 0.2s;
+  /* Ensure the white type remains visible even if inherited link styles apply */
+  color: var(--white) !important;
+}
+
+.book-btn:hover {
+  background-color: var(--ocean-blue);
 }
 
 /* Hero section */
 .hero {
   position: relative;
   height: 100vh;
-  background: url('hero.png') center/cover no-repeat;
+  min-height: 500px;
+  background-image: url('hero.png');
+  background-size: cover;
+  background-position: center;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #fff;
   text-align: center;
+  color: var(--deep-green);
 }
 
-.hero .overlay {
-  background-color: rgba(0, 0, 0, 0.4);
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 2rem;
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(232, 225, 212, 0.6);
 }
 
-.hero .logo {
-  width: 200px;
-  margin-bottom: 1.5rem;
+.hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 750px;
+  padding: 0 1.5rem;
 }
 
 .hero-content h1 {
-  color: #fff;
-  margin-bottom: 1rem;
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+}
+
+.hero-content p {
+  font-size: 1.25rem;
+  margin-bottom: 1.5rem;
 }
 
 .btn {
   display: inline-block;
-  background-color: #2f4f4f; /* deep green */
-  color: #fff;
   padding: 0.75rem 1.5rem;
   border-radius: 4px;
-  transition: background-color 0.3s ease;
+  text-decoration: none;
+  font-weight: 500;
+  cursor: pointer;
 }
 
-.btn:hover {
-  background-color: #c4a484; /* warm clay */
+.primary-btn {
+  background-color: var(--deep-green);
+  color: var(--white);
+  transition: background-color 0.2s;
 }
 
-/* Cards for rooms */
-.cards {
+.primary-btn:hover {
+  background-color: var(--ocean-blue);
+}
+
+/* Section styling */
+.section {
+  padding: 5rem 0;
+}
+
+.section h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+/* About section */
+.about-section p {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+/* Rooms section */
+.room-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
 }
 
-.card {
-  background-color: #fff;
+.room-card {
+  background-color: var(--beige);
+  padding: 2rem;
   border-radius: 8px;
-  padding: 1.5rem;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-  transition: transform 0.3s ease;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.15s ease;
 }
 
-.card:hover {
+.room-card:hover {
   transform: translateY(-4px);
 }
 
-.card h3 {
+.room-card h3 {
+  font-size: 1.5rem;
   margin-bottom: 0.5rem;
-  color: #2f4f4f;
+  color: var(--deep-green);
 }
 
-.card p {
-  margin-bottom: 0.5rem;
-}
-
-/* Experiences list */
-.experiences-list {
-  list-style: none;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1rem;
-}
-
-.experiences-list li {
-  background-color: #fff;
-  padding: 1rem;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-}
-
-/* Gallery */
-.gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 1rem;
-}
-
-.gallery .placeholder {
-  background-color: #ccc;
-  height: 0;
-  padding-bottom: 75%;
-  position: relative;
-  border-radius: 8px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.room-card p {
+  flex-grow: 1;
   font-size: 1rem;
-  color: #666;
-}
-
-/* Contact form */
-.contact-form {
-  max-width: 500px;
-  margin: 0 auto;
-}
-
-.form-row {
   margin-bottom: 1rem;
 }
 
-.form-row label {
-  display: block;
-  margin-bottom: 0.5rem;
-  color: #2f4f4f;
+.text-link {
+  color: var(--deep-green);
+  text-decoration: none;
+  font-weight: 500;
+  align-self: flex-start;
+  transition: color 0.2s;
 }
 
-.form-row input,
-.form-row textarea {
-  width: 100%;
-  padding: 0.5rem;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+.text-link:hover {
+  color: var(--ocean-blue);
+  text-decoration: underline;
+}
+
+/* Experiences section */
+.exp-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.exp-card {
+  background-color: var(--beige);
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+  transition: transform 0.15s ease;
+}
+
+.exp-card:hover {
+  transform: translateY(-4px);
+}
+
+.exp-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: var(--deep-green);
+}
+
+.exp-card p {
   font-size: 1rem;
 }
 
-.booking-links {
-  margin-top: 1rem;
+/* Gallery section */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 1rem;
+}
+
+.gallery-item {
+  position: relative;
+  padding-top: 75%; /* 4:3 ratio */
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* Placeholder colours – these can be replaced by setting background-image via inline style or CSS. */
+.gallery-item--1 { background-color: var(--deep-green); }
+.gallery-item--2 { background-color: var(--ocean-blue); }
+.gallery-item--3 { background-color: var(--clay); }
+.gallery-item--4 { background-color: var(--charcoal); }
+.gallery-item--5 { background-color: var(--beige); border: 1px solid var(--deep-green); }
+.gallery-item--6 { background-color: var(--white); border: 1px solid var(--clay); }
+
+/* Contact section */
+.contact-section {
   text-align: center;
+}
+
+.contact-section p {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+
+.contact-details a {
+  color: var(--deep-green);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.contact-details a:hover {
+  text-decoration: underline;
 }
 
 /* Footer */
 .footer {
+  padding: 2rem 0;
+  background-color: var(--beige);
   text-align: center;
-  padding: 2rem 1rem;
-  background-color: #2f4f4f;
-  color: #fff;
+  font-size: 0.9rem;
+  color: var(--deep-green);
 }
 
-.footer p {
-  margin: 0;
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .nav-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .primary-nav {
+    margin-top: 0.5rem;
+  }
+  .primary-nav a {
+    margin: 0 1rem 0.5rem 0;
+    display: inline-block;
+  }
+  .book-btn {
+    margin-left: 0;
+    margin-top: 0.5rem;
+  }
+  .hero-content h1 {
+    font-size: 2.2rem;
+  }
+  .hero-content p {
+    font-size: 1rem;
+  }
+  .section {
+    padding: 3rem 0;
+  }
 }

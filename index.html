@@ -4,96 +4,173 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lawi Haven Stay</title>
+    <!-- Pull in a graceful serif and sans–serif typeface.  If the fonts are not available the browser will fall back to system fonts. -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header class="hero">
-      <div class="overlay">
-        <img src="logo.png" alt="Lawi Haven Stay logo" class="logo" />
-        <div class="hero-content">
-          <h1>Live Always With Intention</h1>
-          <a href="#booking" class="btn">Book Now</a>
-        </div>
+    <!-- Fixed navigation bar with logo and links.  On smaller screens the links stack underneath the logo for a clean, mobile‑friendly experience. -->
+    <header class="navbar">
+      <div class="nav-container">
+        <a href="#" class="logo-link">
+          <img src="logo.png" alt="Lawi logo" class="logo" />
+        </a>
+        <nav class="primary-nav">
+          <a href="#home">Home</a>
+          <a href="#rooms">Rooms</a>
+          <a href="#experiences">Experiences</a>
+          <a href="#gallery">Gallery</a>
+          <a href="#contact" class="btn book-btn">Book</a>
+        </nav>
       </div>
     </header>
-    <main>
-      <section id="about" class="section">
-        <h2>About Lawi</h2>
+
+    <!-- Hero section uses a custom illustration as the background.  A semi‑transparent overlay ensures the text is readable without obscuring the artwork. -->
+    <section id="home" class="hero">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <h1>Live Always With Intention</h1>
+        <p>Eco‑friendly surf camp on Siargao Island</p>
+        <a href="#rooms" class="btn primary-btn">Explore our rooms</a>
+      </div>
+    </section>
+
+    <!-- Introduction about the property.  Keep the text brief and invite the visitor to scroll further. -->
+    <section id="about" class="section about-section">
+      <div class="container">
+        <h2>Welcome to Lawi</h2>
         <p>
-          Lawi Haven Stay is an eco‑luxury accommodation on Siargao Island. Our
-          philosophy is about living intentionally and connecting with nature.
-          We blend sustainability with comfort, using natural materials like
-          raffia, bamboo and driftwood in our design. Guests can enjoy a
-          communal kitchen, cozy spaces, and a relaxed surfing lifestyle.
+          Lawi – Live Always With Intention is our modern yet soulfully raw island
+          escape in Burgos, Siargao’s quiet north.  Crafted by two friends who
+          believe in slow living and authentic travel, our homestay blends
+          local wood artistry with clean modern design.  We sit directly on
+          Siargao Circumferential Road, just steps from surf breaks, a quiet
+          beach and local eateries.  The property features two thoughtfully
+          designed private rooms and a spacious ten‑bed dormitory, all
+          furnished with natural materials, mosquito nets and ambient lighting.
+          Warm 24‑hour reception care, eco‑friendly touches and a centred
+          location make Lawi an honest and connected experience of island life.
         </p>
-      </section>
-      <section id="rooms" class="section alt">
-        <h2>Rooms &amp; Stay</h2>
-        <div class="cards">
-          <article class="card">
-            <h3>Private Room</h3>
-            <p>A tranquil room with king bed, en‑suite bathroom and terrace.</p>
-          </article>
-          <article class="card">
-            <h3>Dormitory</h3>
-            <p>Shared room with comfortable beds, personal lockers and fans.</p>
-          </article>
-          <article class="card">
-            <h3>Bungalow</h3>
-            <p>Stand‑alone hut made from natural materials with sea breeze.</p>
-          </article>
+      </div>
+    </section>
+
+    <!-- Rooms section.  Showcase different accommodation options with succinct copy.  Cards remain flexible and stack on small screens. -->
+    <section id="rooms" class="section rooms-section">
+      <div class="container">
+        <h2>Our Spaces</h2>
+        <div class="room-grid">
+          <div class="room-card">
+            <h3>Private Rooms</h3>
+            <p>
+              Two intimate rooms featuring handcrafted wood furniture, cozy
+              double beds, mosquito nets and ambient lighting.  Guests share
+              nearby bathrooms and enjoy easy access to the beach.  Ideal for
+              couples or solo travellers seeking a restful retreat.
+            </p>
+            <a href="#contact" class="text-link">Check availability</a>
+          </div>
+          <div class="room-card">
+            <h3>Shared Dormitory</h3>
+            <p>
+              A spacious ten‑bed dorm with four single bunk beds, two cozy
+              doubles for couples or comfort seekers, and two single beds in a
+              semi‑private nook.  Each bed comes with a mosquito net and
+              personal light.  A welcoming space to meet fellow travellers.
+            </p>
+            <a href="#contact" class="text-link">Check availability</a>
+          </div>
+          <div class="room-card">
+            <h3>Amenities &amp; Location</h3>
+            <p>
+              Beachfront on Siargao Circumferential Road with free parking and
+              24‑hour reception.  Fast wifi, communal areas and thoughtful
+              touches like earplugs at check‑in ensure a comfortable stay.
+              Steps from surf breaks, cafes, markets and Sunday beach jams.
+            </p>
+            <a href="#contact" class="text-link">Learn more</a>
+          </div>
         </div>
-      </section>
-      <section id="experiences" class="section">
+      </div>
+    </section>
+
+    <!-- Experiences section highlights communal activities and amenities.  Use small cards to keep the layout light and avoid heavy blocks of text. -->
+    <section id="experiences" class="section experiences-section">
+      <div class="container">
         <h2>Experiences</h2>
-        <ul class="experiences-list">
-          <li>Community kitchen &amp; cooking classes</li>
-          <li>Eco‑lamp making workshops</li>
-          <li>Island hopping &amp; surfing tours</li>
-          <li>Yoga and mindfulness sessions</li>
-        </ul>
-      </section>
-      <section id="gallery" class="section alt">
+        <div class="exp-grid">
+          <div class="exp-card">
+            <h3>Surf &amp; Waves</h3>
+            <p>
+              Paddle out to world‑class breaks right in front of the homestay or
+              watch the sunrise from the sand.  We can connect you with local
+              coaches and board rentals for all levels.
+            </p>
+          </div>
+          <div class="exp-card">
+            <h3>Cook &amp; Connect</h3>
+            <p>
+              Share meals in our open‑air kitchen and dining space.  Join
+              communal dinners, sample fresh local produce and exchange
+              stories with travellers and hosts.
+            </p>
+          </div>
+          <div class="exp-card">
+            <h3>Slow Living</h3>
+            <p>
+              Embrace island rhythms: join weekly beach jams and markets,
+              practice yoga or journaling, and unwind knowing we provide
+              earplugs for the occasional church bells or karaoke next door.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- A simple gallery.  To maintain minimalism the gallery tiles use coloured backgrounds rather than photographic content.  Replace the CSS background‑images or add images to the folder for a richer gallery. -->
+    <section id="gallery" class="section gallery-section">
+      <div class="container">
         <h2>Gallery</h2>
-        <div class="gallery">
-          <div class="placeholder">Image 1</div>
-          <div class="placeholder">Image 2</div>
-          <div class="placeholder">Image 3</div>
-          <div class="placeholder">Image 4</div>
+        <div class="gallery-grid">
+          <div class="gallery-item gallery-item--1"></div>
+          <div class="gallery-item gallery-item--2"></div>
+          <div class="gallery-item gallery-item--3"></div>
+          <div class="gallery-item gallery-item--4"></div>
+          <div class="gallery-item gallery-item--5"></div>
+          <div class="gallery-item gallery-item--6"></div>
         </div>
-      </section>
-      <section id="contact" class="section">
-        <h2>Contact &amp; Booking</h2>
+      </div>
+    </section>
+
+    <!-- Call to action and contact details.  Encourage visitors to book and provide a means of contact. -->
+    <section id="contact" class="section contact-section">
+      <div class="container">
+        <h2>Ready to stay with us?</h2>
         <p>
-          Interested in staying with us? Reach out via the form below or book
-          directly through our partner platforms.
+          Reserve your spot at our beachfront homestay.  We operate on a small
+          scale to preserve the serenity of our home, so spaces are limited.
         </p>
-        <form class="contact-form" action="#" method="post">
-          <div class="form-row">
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" required />
-          </div>
-          <div class="form-row">
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" required />
-          </div>
-          <div class="form-row">
-            <label for="message">Message</label>
-            <textarea id="message" name="message" rows="4" required></textarea>
-          </div>
-          <button type="submit" class="btn">Send</button>
-        </form>
-        <div class="booking-links">
-          <p>
-            Or book directly on
-            <a href="#" target="_blank">Booking.com</a> or
-            <a href="#" target="_blank">Airbnb</a>.
-          </p>
-        </div>
-      </section>
-    </main>
+        <a href="#" class="btn primary-btn">Book your stay</a>
+        <p class="contact-details">
+          Find us on Siargao Circumferential Road, Burgos, Surigao del Norte.
+          Check‑in from 2:00 PM, check‑out by 11:00 AM.  For questions or
+          airport transfers feel free to email us at
+          <a href="mailto:hello@lawi.stay">hello@lawi.stay</a>.
+        </p>
+      </div>
+    </section>
+
     <footer class="footer">
-      <p>&copy; 2025 Lawi Haven Stay. All rights reserved.</p>
+      <div class="container">
+        <p>&copy; <span id="year"></span> Lawi Haven Stay.  All rights reserved.</p>
+      </div>
     </footer>
+
+    <!-- Automatically update the year in the footer -->
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
   </body>
 </html>
