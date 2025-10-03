@@ -161,6 +161,14 @@ p {
   background-color: var(--ocean-blue);
 }
 
+/* Logo displayed in the hero section.  Keep it responsive and ensure it sits comfortably above the heading. */
+.hero-logo {
+  width: 200px;
+  height: auto;
+  margin: 0 auto 1rem;
+  display: block;
+}
+
 /* Section styling */
 .section {
   padding: 5rem 0;
@@ -329,6 +337,11 @@ p {
   }
   .hero-content p {
     font-size: 1rem;
+  }
+  /* Scale the hero logo down on small screens */
+  .hero-logo {
+    width: 150px;
+    margin-bottom: 0.75rem;
   }
   .section {
     padding: 3rem 0;
