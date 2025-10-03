@@ -321,33 +321,34 @@ p {
 /* Placeholder colours – these can be replaced by setting background-image via inline style or CSS. */
 /* Assign each gallery tile a photographic background from our collection.  Images are sized to cover the tile area and centered for best composition.  A subtle border remains on the lighter backgrounds for definition. */
 .gallery-item--1 {
-  background-image: url('gallery1.jpg');
+  /* Use absolute URL to raw.githubusercontent.com to ensure images load on GitHub Pages */
+  background-image: url('https://raw.githubusercontent.com/Lawihaven/lawi-haven-site/main/gallery1.jpg');
   background-size: cover;
   background-position: center;
 }
 .gallery-item--2 {
-  background-image: url('gallery2.jpg');
+  background-image: url('https://raw.githubusercontent.com/Lawihaven/lawi-haven-site/main/gallery2.jpg');
   background-size: cover;
   background-position: center;
 }
 .gallery-item--3 {
-  background-image: url('gallery3.jpg');
+  background-image: url('https://raw.githubusercontent.com/Lawihaven/lawi-haven-site/main/gallery3.jpg');
   background-size: cover;
   background-position: center;
 }
 .gallery-item--4 {
-  background-image: url('gallery4.jpg');
+  background-image: url('https://raw.githubusercontent.com/Lawihaven/lawi-haven-site/main/gallery4.jpg');
   background-size: cover;
   background-position: center;
 }
 .gallery-item--5 {
-  background-image: url('gallery5.jpg');
+  background-image: url('https://raw.githubusercontent.com/Lawihaven/lawi-haven-site/main/gallery5.jpg');
   background-size: cover;
   background-position: center;
   border: 1px solid var(--deep-green);
 }
 .gallery-item--6 {
-  background-image: url('gallery6.jpg');
+  background-image: url('https://raw.githubusercontent.com/Lawihaven/lawi-haven-site/main/gallery6.jpg');
   background-size: cover;
   background-position: center;
   border: 1px solid var(--clay);
