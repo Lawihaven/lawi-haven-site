@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reviews | Lawi Haven Stay</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="nav-container">
+        <a href="index.html" class="logo-link">
+          <img src="logo.png" alt="Lawi logo" class="logo" />
+        </a>
+        <nav class="primary-nav">
+          <a href="index.html#home">Home</a>
+          <a href="index.html#rooms">Rooms</a>
+          <a href="index.html#experiences">Experiences</a>
+          <a href="index.html#gallery">Gallery</a>
+          <a href="faq.html">FAQ</a>
+          <a href="services.html">Services</a>
+          <a href="location.html">Location</a>
+          <a href="reviews.html">Reviews</a>
+          <a href="index.html#connect" class="btn book-btn">Book</a>
+        </nav>
+      </div>
+    </header>
+
+    <section class="section reviews-section">
+      <div class="container">
+        <h2>Guest Reviews</h2>
+        <p style="text-align:center; max-width:700px; margin:0 auto 2rem; font-size:1.1rem;">
+          Here’s what our guests are saying about Lawi Haven Stay.  These excerpts come from independent reviews left on Booking.com.
+        </p>
+        <div class="exp-grid">
+          <div class="exp-card">
+            <p style="font-size:1.1rem; font-style:italic;">“Lawi Haven is such a peaceful spot to stay.  Beach is just a few steps away!  The place is well‑kept and clean, with cozy rooms that make it easy to relax and get a good night’s rest.”</p>
+            <p><strong>– Kris, Mexico</strong></p>
+            <p style="color: var(--clay);">★★★★★</p>
+          </div>
+          <div class="exp-card">
+            <p style="font-size:1.1rem; font-style:italic;">“Had a short but sweet stay at Lawi Haven!  Perfectly situated in the heart of Burgos, the beach is just a few steps away!  Rooms are very well designed and thought of!”</p>
+            <p><strong>– Christian, Philippines</strong></p>
+            <p style="color: var(--clay);">★★★★★</p>
+          </div>
+          <div class="exp-card">
+            <p style="font-size:1.1rem; font-style:italic;">“I had a good time at Lawi Haven!  I extended two times, not just because of the beauty of this place but also because of the staff who made my stay unforgettable.”</p>
+            <p><strong>– Natalie, Germany</strong></p>
+            <p style="color: var(--clay);">★★★★☆</p>
+          </div>
+          <div class="exp-card">
+            <p style="font-size:1.1rem; font-style:italic;">“Whether you’re travelling solo or with friends, Lawi Haven won’t disappoint.  The location is ideal—quiet yet central—and the staff are warm and helpful.  Beds offer great privacy with curtains and thoughtful design.”</p>
+            <p><strong>– Claudio, Switzerland</strong></p>
+            <p style="color: var(--clay);">★★★★★</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <p>&copy; <span id="year-reviews"></span> Lawi Haven Stay. All rights reserved.</p>
+      </div>
+    </footer>
+    <script>
+      document.getElementById('year-reviews').textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>

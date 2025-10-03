@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FAQ | Lawi Haven Stay</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="nav-container">
+        <a href="index.html" class="logo-link">
+          <img src="logo.png" alt="Lawi logo" class="logo" />
+        </a>
+        <nav class="primary-nav">
+          <a href="index.html#home">Home</a>
+          <a href="index.html#rooms">Rooms</a>
+          <a href="index.html#experiences">Experiences</a>
+          <a href="index.html#gallery">Gallery</a>
+          <a href="faq.html">FAQ</a>
+          <a href="services.html">Services</a>
+          <a href="location.html">Location</a>
+          <a href="reviews.html">Reviews</a>
+          <a href="index.html#connect" class="btn book-btn">Book</a>
+        </nav>
+      </div>
+    </header>
+
+    <section class="section faq-section">
+      <div class="container">
+        <h2>Frequently Asked Questions</h2>
+        <div class="room-grid">
+          <!-- Use the room grid styling to create a responsive FAQ layout -->
+          <div class="room-card">
+            <h3>What are your check‑in and check‑out times?</h3>
+            <p>Check‑in begins at 2:00 PM and check‑out is by 11:00 AM.  If you arrive early or would like a late check‑out, please contact us and we will do our best to accommodate your request.</p>
+          </div>
+          <div class="room-card">
+            <h3>Do you offer free Wi‑Fi?</h3>
+            <p>Yes.  Complimentary high‑speed Wi‑Fi is available throughout the property so you can stay connected while enjoying island life.</p>
+          </div>
+          <div class="room-card">
+            <h3>Can you arrange airport or ferry transfers?</h3>
+            <p>Absolutely.  We can organise a van, tuktuk or motorbike to pick you up from Sayak (Siargao) airport or the ferry terminal.  Please book your transfer on our <a href="services.html#airport">Services</a> page or reach out via WhatsApp in advance.</p>
+          </div>
+          <div class="room-card">
+            <h3>Is surfboard rental or coaching available?</h3>
+            <p>Yes.  We partner with local surf schools to provide lessons and board rentals for all levels.  Visit our <a href="services.html#surf-lessons">Services</a> page to learn more and make a request.</p>
+          </div>
+          <div class="room-card">
+            <h3>How close are you to major attractions?</h3>
+            <p>Our homestay is centrally located in Burgos.  Nearby attractions include Alegria Beach (2.3 miles), General Luna Beach (1.1 miles) and Tak Tak Falls (2.1 miles)【488069385298067†L240-L245】.  Surf breaks, cafés and markets are just a short walk away.</p>
+          </div>
+          <div class="room-card">
+            <h3>Do you provide earplugs?</h3>
+            <p>Yes.  Burgos can be lively at times with church bells and karaoke.  We offer complimentary earplugs at check‑in to ensure a restful night’s sleep.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <p>&copy; <span id="year-faq"></span> Lawi Haven Stay. All rights reserved.</p>
+      </div>
+    </footer>
+    <script>
+      document.getElementById('year-faq').textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>

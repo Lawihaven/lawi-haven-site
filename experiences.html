@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Experiences | Lawi Haven Stay</title>
+    <!-- Fonts and styles -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Shared navigation bar.  Links to index.html so visitors can return to the home page sections. -->
+    <header class="navbar">
+      <div class="nav-container">
+        <a href="index.html" class="logo-link">
+          <img src="logo.png" alt="Lawi logo" class="logo" />
+        </a>
+        <nav class="primary-nav">
+          <a href="index.html#home">Home</a>
+          <a href="index.html#rooms">Rooms</a>
+          <a href="experiences.html">Experiences</a>
+          <a href="index.html#gallery">Gallery</a>
+          <a href="faq.html">FAQ</a>
+          <a href="services.html">Services</a>
+          <a href="location.html">Location</a>
+          <a href="reviews.html">Reviews</a>
+          <a href="index.html#connect" class="btn book-btn">Book</a>
+        </nav>
+      </div>
+    </header>
+
+    <section class="section experiences-section" id="experiences-page">
+      <div class="container">
+        <h2>Experiences</h2>
+        <!-- Expanded descriptions for each experience.  Visitors can jump directly to each section via hash anchors. -->
+        <div class="exp-grid">
+          <div class="exp-card" id="surf">
+            <h3>Surf &amp; Waves</h3>
+            <p>
+              Siargao is the surfing capital of the Philippines and our front yard
+              puts you within paddling distance of mellow beginner waves and
+              world‑class reef breaks.  Wake up early for sunrise sessions or
+              spend your evenings watching the sunset from the shore.  We work
+              with trusted local coaches and can arrange private or group
+              lessons, as well as board rentals for all levels.
+            </p>
+            <a href="services.html#surf-lessons" class="text-link">Book surf lessons</a>
+          </div>
+          <div class="exp-card" id="cook">
+            <h3>Cook &amp; Connect</h3>
+            <p>
+              Community is at the heart of Lawi Haven Stay.  Our open‑air
+              kitchen and dining space invite guests to prepare and share
+              meals using fresh local produce.  Join our communal dinners,
+              learn Filipino recipes from our hosts and connect with fellow
+              travellers over delicious food.  Special requests like cooking
+              classes or private dinners can be arranged on request.
+            </p>
+            <a href="services.html#private-dinners" class="text-link">Arrange a communal meal</a>
+          </div>
+          <div class="exp-card" id="slow">
+            <h3>Slow Living</h3>
+            <p>
+              Slow down and reconnect with yourself.  From weekly beach jams
+              and sunset markets to sunrise yoga and journaling sessions,
+              Lawi encourages you to embrace island rhythms.  Explore
+              Burgos by bicycle, read in a hammock or simply watch the
+              coconut palms sway.  Earplugs are provided for the occasional
+              karaoke night next door so you can rest easy.
+            </p>
+            <a href="services.html#slow-experiences" class="text-link">Explore slow living</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <p>&copy; <span id="year-exp"></span> Lawi Haven Stay. All rights reserved.</p>
+      </div>
+    </footer>
+    <script>
+      // update year in footer
+      document.getElementById('year-exp').textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>

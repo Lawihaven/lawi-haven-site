@@ -319,12 +319,39 @@ p {
 }
 
 /* Placeholder colours – these can be replaced by setting background-image via inline style or CSS. */
-.gallery-item--1 { background-color: var(--deep-green); }
-.gallery-item--2 { background-color: var(--ocean-blue); }
-.gallery-item--3 { background-color: var(--clay); }
-.gallery-item--4 { background-color: var(--charcoal); }
-.gallery-item--5 { background-color: var(--beige); border: 1px solid var(--deep-green); }
-.gallery-item--6 { background-color: var(--white); border: 1px solid var(--clay); }
+/* Assign each gallery tile a photographic background from our collection.  Images are sized to cover the tile area and centered for best composition.  A subtle border remains on the lighter backgrounds for definition. */
+.gallery-item--1 {
+  background-image: url('gallery1.jpg');
+  background-size: cover;
+  background-position: center;
+}
+.gallery-item--2 {
+  background-image: url('gallery2.jpg');
+  background-size: cover;
+  background-position: center;
+}
+.gallery-item--3 {
+  background-image: url('gallery3.jpg');
+  background-size: cover;
+  background-position: center;
+}
+.gallery-item--4 {
+  background-image: url('gallery4.jpg');
+  background-size: cover;
+  background-position: center;
+}
+.gallery-item--5 {
+  background-image: url('gallery5.jpg');
+  background-size: cover;
+  background-position: center;
+  border: 1px solid var(--deep-green);
+}
+.gallery-item--6 {
+  background-image: url('gallery6.jpg');
+  background-size: cover;
+  background-position: center;
+  border: 1px solid var(--clay);
+}
 
 /* Contact section */
 .contact-section {

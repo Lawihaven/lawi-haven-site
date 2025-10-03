@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Services &amp; Add‑ons | Lawi Haven Stay</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="nav-container">
+        <a href="index.html" class="logo-link">
+          <img src="logo.png" alt="Lawi logo" class="logo" />
+        </a>
+        <nav class="primary-nav">
+          <a href="index.html#home">Home</a>
+          <a href="index.html#rooms">Rooms</a>
+          <a href="index.html#experiences">Experiences</a>
+          <a href="index.html#gallery">Gallery</a>
+          <a href="faq.html">FAQ</a>
+          <a href="services.html">Services</a>
+          <a href="location.html">Location</a>
+          <a href="reviews.html">Reviews</a>
+          <a href="index.html#connect" class="btn book-btn">Book</a>
+        </nav>
+      </div>
+    </header>
+
+    <section class="section services-section">
+      <div class="container">
+        <h2>Services &amp; Add‑ons</h2>
+        <p style="text-align:center; max-width:700px; margin:0 auto 2rem; font-size:1.1rem;">
+          Enhance your stay with curated add‑ons.  From airport pick‑ups to surf lessons and island transport, we work with trusted local partners to make your visit effortless.  Click a service below to learn more or request a booking via WhatsApp.
+        </p>
+        <div class="exp-grid">
+          <div class="exp-card" id="airport">
+            <h3>Airport or Ferry Pick‑up</h3>
+            <p>
+              Arrive stress‑free.  We offer van, tuktuk or motorbike pick‑ups from Sayak (Siargao) airport or Surigao ferry terminal.  Let us know your arrival time and we’ll be there to greet you with a smile.
+            </p>
+            <a href="https://wa.me/XXXXXXXXXX?text=Hi%20Lawi%20Haven%20Stay%2C%20I%20would%20like%20to%20arrange%20an%20airport%20pickup" class="text-link" target="_blank" rel="noopener">Request pick‑up</a>
+          </div>
+          <div class="exp-card" id="surf-lessons">
+            <h3>Surf Lessons &amp; Board Rental</h3>
+            <p>
+              Whether you’re a beginner or a seasoned surfer, our certified coaches provide private and group lessons tailored to your level.  Surfboard rentals are available by the hour or by the day, with discounts for multi‑day packages.
+            </p>
+            <a href="https://wa.me/XXXXXXXXXX?text=Hi%20Lawi%20Haven%20Stay%2C%20I%20would%20like%20to%20book%20a%20surf%20lesson" class="text-link" target="_blank" rel="noopener">Book a lesson</a>
+          </div>
+          <div class="exp-card" id="motorbike">
+            <h3>Motorbike Rental</h3>
+            <p>
+              Explore Siargao at your own pace on two wheels.  Our well‑maintained motorbikes come with helmets and a full tank.  Daily and weekly rates available.  Drivers license required.
+            </p>
+            <a href="https://wa.me/XXXXXXXXXX?text=Hi%20Lawi%20Haven%20Stay%2C%20I%20would%20like%20to%20rent%20a%20motorbike" class="text-link" target="_blank" rel="noopener">Reserve a bike</a>
+          </div>
+          <div class="exp-card" id="van-rental">
+            <h3>Van Rental &amp; Island Tours</h3>
+            <p>
+              Planning a day trip with friends?  Rent a private van with driver for flexible island tours.  We can customise itineraries to include waterfalls, beaches and hidden gems around Siargao.
+            </p>
+            <a href="https://wa.me/XXXXXXXXXX?text=Hi%20Lawi%20Haven%20Stay%2C%20I%20would%20like%20to%20rent%20a%20van" class="text-link" target="_blank" rel="noopener">Book a van</a>
+          </div>
+          <div class="exp-card" id="tuktuk">
+            <h3>Tuktuk &amp; Local Transport</h3>
+            <p>
+              For quick trips around Burgos or General Luna, hop on a traditional tuktuk.  Our friendly drivers know all the best cafés, bars and beaches.  Short‑ and long‑haul rides available on request.
+            </p>
+            <a href="https://wa.me/XXXXXXXXXX?text=Hi%20Lawi%20Haven%20Stay%2C%20I%20need%20a%20tuktuk%20ride" class="text-link" target="_blank" rel="noopener">Arrange a ride</a>
+          </div>
+          <div class="exp-card" id="private-dinners">
+            <h3>Private Dinners &amp; Cooking Classes</h3>
+            <p>
+              Interested in learning Filipino recipes or celebrating a special occasion?  We can organise private dinners and cooking classes featuring locally sourced ingredients and traditional techniques.
+            </p>
+            <a href="https://wa.me/XXXXXXXXXX?text=Hi%20Lawi%20Haven%20Stay%2C%20I%20would%20like%20to%20arrange%20a%20private%20dinner" class="text-link" target="_blank" rel="noopener">Enquire now</a>
+          </div>
+          <div class="exp-card" id="slow-experiences">
+            <h3>Slow Living Experiences</h3>
+            <p>
+              From yoga sessions and journaling workshops to sunset picnics and market visits, our slow living activities help you reconnect with yourself and the community.  Check our events calendar or ask us about upcoming gatherings.
+            </p>
+            <a href="https://wa.me/XXXXXXXXXX?text=Hi%20Lawi%20Haven%20Stay%2C%20I%20am%20interested%20in%20slow%20living%20activities" class="text-link" target="_blank" rel="noopener">Join an activity</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <p>&copy; <span id="year-services"></span> Lawi Haven Stay. All rights reserved.</p>
+      </div>
+    </footer>
+    <script>
+      document.getElementById('year-services').textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
